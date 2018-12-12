@@ -1,0 +1,17 @@
+<div [routerLink]="['/events', event?.id]" class="col well thumbnail">
+  <div style="margin-top:30px">
+    Event: {{event.name}}
+  </div>
+  <div>
+    Date: {{event.date}}
+  </div>
+  <div [ngClass]="{'in-person': true}">
+    Time: {{event.time}}
+  </div>
+  <div *ngIf="event?.location">
+    <span>Location {{event.location.address}}</span>
+    <span class="pad-left"></span>
+    <span> {{event.location.city}}, {{event.location.country}} </span>
+  </div>
+  <button class="btn btn-primary" (click)="handleClick(event.name)">Click me</button>
+</div>

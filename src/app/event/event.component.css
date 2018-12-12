@@ -1,0 +1,15 @@
+.thumbnail {
+  min-height: 300px;
+}
+
+.in-person {
+  color: green;
+}
+
+.online {
+  color: red;
+}
+
+.tbd {
+  color: #aaa;
+}

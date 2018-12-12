@@ -1,0 +1,7 @@
+<div class="row">
+  <div class="col-md-5"> Upcoming Events</div>
+  <div class="col-md-5" *ngFor="let item of events">
+    <app-event (click)="handleClick(item.name)" class="row" [event]="item" (buttonClickEvent)="OnClick($event)">
+    </app-event>
+  </div>
+</div>
